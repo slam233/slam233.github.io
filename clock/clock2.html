@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a020a6cfeed00cacc9d117ee202e152a";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>kindle时钟</title>
+		<meta http-equiv="refresh" content="600">
+		<script type="text/javascript">
+			function check(val) {
+				if (val < 10) {
+					return ("0" + val);
+				} 
+				else {
+					return (val);
+				}
+			}
+			function displayTime() {
+				//获取div元素
+				var timeDiv=document.getElementById("timeDiv");
+				//获取系统当前的年、月、日、小时、分钟、毫秒
+				var date = new Date();
+				var utc8DiffMinutes = date.getTimezoneOffset() + 480;
+                    date.setMinutes(date.getMinutes() + utc8DiffMinutes);
+				var year = date.getFullYear();
+				var month = date.getMonth() + 1;
+				var day = date.getDate();
+				var weekList = ['日', '一', '二', '三', '四', '五', '六'];
+				var weekString = '星期' + weekList[date.getDay()];
+				var hour = date.getHours();
+				var minutes = date.getMinutes();
+				var second = date.getSeconds();
+				var yearstr = month + "月" + day + "日" + " " + weekString
+				var timestr = check(hour) + ":" + check(minutes) ;
+				//将系统时间设置到div元素中
+				yearDiv.innerHTML = yearstr;
+				timeDiv.innerHTML = timestr;
+			}
+			//每隔60秒调用一次displayTime函数
+			function start(){
+		        window.setInterval("displayTime()",1000)//单位是毫秒
+			}
+
+			var httpRequest = new XMLHttpRequest();//第一步：建立所需的对象
+	        httpRequest.open('GET', 'http://api.tianapi.com/txapi/hotreview/index?key=d8555745b88861ae8c95d9f1da47fba6', true);//且用且珍惜
+	        httpRequest.send();
+	        /**
+	         * 获取数据后的处理程序
+	         */
+	        httpRequest.onreadystatechange = function () {
+	            if (httpRequest.readyState == 4 && httpRequest.status == 200) {
+	                var json = httpRequest.responseText;//获取到json字符串，还需解析
+	                //console.log(json);
+	                var a = JSON.parse(json)
+	                nemusicDiv.innerHTML = a['newslist'][0]['content']
+	                authorDiv.innerHTML = "——"+a['newslist'][0]['source']
+	                //console.log(a['newslist'][0]['source']);
+	            }
+	        }
+		</script>
+		<style type="text/css">
+			body{
+				width: 600px;
+				height: 600px;
+			}
+			a{
+				color: black;
+				text-decoration: none;
+			}
+			.timediv{
+				font-size: 10em;
+				margin-top: 16%;
+				margin-bottom: 10%;
+				margin-left: 8%;
+				
+			}
+			.yeardiv{
+				font-size: 1.8em;
+				margin-left: 28%;
+				margin-bottom:10%;
+				
+			}
+			.nemusicDiv{
+				font-size: 1.2em;
+				text-indent:2em;
+				line-height: 140%;
+				margin-left: 4%;
+				margin-right: 4%;
+			}
+			.authorDiv{
+				margin-top: 8%;
+				margin-right: 4%;
+				float: right;
+			}
+		</style>
+	</head>
+<!--  body onload:当整个html页面加载完成后执行此函数  -->
+	<body onload="start();">
+		<div id="timeDiv" class="timediv"></div> 
+		<div id="yearDiv" class="yeardiv"></div> 
+		<a href="javascript:location.reload();">
+			<div id="nemusicDiv" class="nemusicDiv"></div>
+		</a>
+		<div id="authorDiv" class="authorDiv"></div>
+	</body>
+</html>
