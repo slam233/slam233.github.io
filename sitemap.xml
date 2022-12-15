@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://slam233.github.io/posts/6650.html</loc>
+    
+    <lastmod>2022-12-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://slam233.github.io/links/index.html</loc>
+    
+    <lastmod>2022-11-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://slam233.github.io/diary/index.html</loc>
+    
+    <lastmod>2022-10-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://slam233.github.io/cat/index.html</loc>
     
     <lastmod>2022-10-11</lastmod>
@@ -30,15 +57,6 @@
   
   <url>
     <loc>https://slam233.github.io/about/index.html</loc>
-    
-    <lastmod>2022-10-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://slam233.github.io/diary/index.html</loc>
     
     <lastmod>2022-10-11</lastmod>
     
@@ -110,15 +128,6 @@
   </url>
   
   <url>
-    <loc>https://slam233.github.io/links/index.html</loc>
-    
-    <lastmod>2022-10-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://slam233.github.io/posts/22715.html</loc>
     
     <lastmod>2022-10-07</lastmod>
@@ -139,43 +148,50 @@
 
   <url>
     <loc>https://slam233.github.io/</loc>
-    <lastmod>2022-10-13</lastmod>
+    <lastmod>2022-12-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://slam233.github.io/tags/ksweb/</loc>
-    <lastmod>2022-10-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://slam233.github.io/tags/%E7%BD%91%E7%AB%99/</loc>
-    <lastmod>2022-10-13</lastmod>
+    <loc>https://slam233.github.io/tags/%E7%BD%91%E7%BB%9C/</loc>
+    <lastmod>2022-12-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://slam233.github.io/tags/Images-Host/</loc>
-    <lastmod>2022-10-13</lastmod>
+    <lastmod>2022-12-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://slam233.github.io/tags/%E5%9B%BE%E5%BA%8A/</loc>
-    <lastmod>2022-10-13</lastmod>
+    <lastmod>2022-12-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://slam233.github.io/tags/ksweb/</loc>
+    <lastmod>2022-12-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://slam233.github.io/tags/%E7%BD%91%E7%AB%99/</loc>
+    <lastmod>2022-12-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://slam233.github.io/tags/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2022-10-13</lastmod>
+    <lastmod>2022-12-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -183,22 +199,29 @@
 
   
   <url>
-    <loc>https://slam233.github.io/categories/%E7%BD%91%E7%AB%99/</loc>
-    <lastmod>2022-10-13</lastmod>
+    <loc>https://slam233.github.io/categories/%E7%BD%91%E7%BB%9C/</loc>
+    <lastmod>2022-12-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://slam233.github.io/categories/%E6%89%A9%E5%B1%95%E5%88%86%E4%BA%AB/</loc>
-    <lastmod>2022-10-13</lastmod>
+    <lastmod>2022-12-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://slam233.github.io/categories/%E7%BD%91%E7%AB%99/</loc>
+    <lastmod>2022-12-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://slam233.github.io/categories/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</loc>
-    <lastmod>2022-10-13</lastmod>
+    <lastmod>2022-12-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
